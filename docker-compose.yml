@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  vscode:
+    image: linuxserver/code-server:4.4.0
+    environment:
+      - SUDO_PASSWORD_HASH=$$6$$12Upc4o.$$ugxKUehkAdm73vJ3dVeIU0Pecty8FFL0zPDWtLueJtpbVgtlumOyHtH7jqdF7mTmLmizBLHcSRQIwcCXL868p.
+      - HASHED_PASSWORD=$$argon2i$$v=19$$m=4096,t=3,p=1$$x5PHRmEiaCqN4i+t+1L9Jw$$jn1Dh9HD0T/UYu7DonQu35CtHMAS3bo+Llw6/N7Qy4k
+    ports:
+      - "8443:8443"
